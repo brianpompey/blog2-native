@@ -18,7 +18,7 @@ const navigator = createStackNavigator(
     defaultNavigationOptions: {
       title: 'Blogs',
     },
-  }
+  } 
 );
 
 const App = createAppContainer(navigator);
