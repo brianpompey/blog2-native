@@ -3,7 +3,7 @@ import createDataContext from './createDataContext';;
 const blogReducer = (state, action) => {
   switch (action.type) {
       case 'edit_blogpost':
-          return state.map(() => {
+          return state.map((blogPost) => {
               return blogPost.id === action.payload.id ? action.payload : blogPost;
             // if (blogPost.id === action.payload.id) {
             //     return action.payload;
